@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm_5dp"
+        android:layout_marginRight="@dimen/dm_5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bg_item_evoucher_order_summary" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eVoucher"
+                android:textColor="@color/txt_black_55"
+                android:textSize="@dimen/txt_15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtEVoucher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$0"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/txt_26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtApplied"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm_4dp"
+                    android:text="(APPLIED)"
+                    android:textColor="@color/txt_black_55"
+                    android:textSize="@dimen/txt_15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtValidDateFromLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity=""
+                        android:text="Valid from: "
+                        android:textColor="@color/txt_black_55"
+                        android:textSize="@dimen/txt_8sp" />
+
+                    <TextView
+                        android:id="@+id/txtValidDateToLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity=""
+                        android:text="Valid to: "
+                        android:textColor="@color/txt_black_55"
+                        android:textSize="@dimen/txt_8sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtValidDateFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity=""
+                        android:text="May 6, 2016, 2:19 PM"
+                        android:textColor="@color/txt_black_55"
+                        android:textSize="@dimen/txt_8sp" />
+
+                    <TextView
+                        android:id="@+id/txtValidDateTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity=""
+                        android:text="May 6, 2016, 2:19 PM"
+                        android:textColor="@color/txt_black_55"
+                        android:textSize="@dimen/txt_8sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imvCheck"
+            android:layout_width="@dimen/dm_30dp"
+            android:layout_height="@dimen/dm_30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/actionbar_height"
+            android:src="@drawable/ic_uncheck_large" />
+    </RelativeLayout>
+</LinearLayout>

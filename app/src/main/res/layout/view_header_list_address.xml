@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtDefaultShippingLabel"
+        style="@style/txt_setting_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEFAULT SHIPPING ADDRESS"
+        android:textColor="@color/main_color" />
+
+    <LinearLayout
+        android:id="@+id/lnlAddressShippingDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dm_15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDefaultShippingName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@color/txt_black_33"
+                android:textSize="@dimen/txt_12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDefaultShippingAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_2dp"
+                android:text="@string/address_sample"
+                android:textColor="@color/txt_black_33"
+                android:textSize="@dimen/txt_12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm_5dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="@dimen/dm_15dp"
+                android:layout_height="@dimen/dm_15dp"
+                android:padding="@dimen/dm_1dp"
+                android:src="@drawable/ic_check" />
+
+            <TextView
+                android:id="@+id/txtSetShippingDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="MAKE DEFAULT"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/txt_12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDefaultBillingLabel"
+        style="@style/txt_setting_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEFAULT BILLING ADDRESS"
+        android:textColor="@color/main_color" />
+
+    <LinearLayout
+        android:id="@+id/lnlAddressBillingDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dm_15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDefaultBillingName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@color/txt_black_33"
+                android:textSize="@dimen/txt_12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDefaultBillingAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_2dp"
+                android:text="@string/address_sample"
+                android:textColor="@color/txt_black_33"
+                android:textSize="@dimen/txt_12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlSetDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm_5dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="@dimen/dm_15dp"
+                android:layout_height="@dimen/dm_15dp"
+                android:padding="@dimen/dm_1dp"
+                android:src="@drawable/ic_check" />
+
+            <TextView
+                android:id="@+id/txtSetBillingDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="MAKE DEFAULT"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/txt_12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtYourAddressLabel"
+        style="@style/txt_setting_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOUR ADDRESS"
+        android:textColor="@color/main_color" />
+</LinearLayout>

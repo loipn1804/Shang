@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rltActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:background="@color/main_color">
+
+                <RelativeLayout
+                    android:id="@+id/rltBack"
+                    android:layout_width="@dimen/actionbar_height"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_red">
+
+                    <ImageView
+                        android:layout_width="@dimen/ac_imv_size"
+                        android:layout_height="@dimen/ac_imv_size"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_back" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Feedback / Contact"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/divider" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:layout_marginTop="@dimen/dm_15dp"
+                android:text="ShangCommerce Pte Ltd"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/txt_22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lnlAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:layout_marginTop="@dimen/dm_15dp"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dm_20dp"
+                    android:layout_height="@dimen/dm_20dp"
+                    android:src="@drawable/ic_address" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_weight="1"
+                    android:text="@string/address"
+                    android:textColor="@color/txt_black_55"
+                    android:textSize="@dimen/txt_15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dm_20dp"
+                    android:layout_height="@dimen/dm_20dp"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/phone"
+                    android:textColor="@color/txt_black_55"
+                    android:textSize="@dimen/txt_15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dm_20dp"
+                    android:layout_height="@dimen/dm_20dp"
+                    android:src="@drawable/ic_mail" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/email"
+                    android:textColor="@color/txt_black_55"
+                    android:textSize="@dimen/txt_15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTalkToUs"
+                style="@style/txt_setting_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:paddingLeft="@dimen/dm_10dp"
+                android:paddingRight="@dimen/dm_10dp"
+                android:text="TALK TO US" />
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Your Name" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Your Email" />
+
+            <TextView
+                android:id="@+id/txtCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dm_15dp"
+                android:layout_marginTop="@dimen/dm_5dp"
+                android:text="0 chars"
+                android:textColor="@color/txt_black_77"
+                android:textSize="@dimen/txt_12sp" />
+
+            <EditText
+                android:id="@+id/edtMessage"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:layout_marginTop="@dimen/dm_5dp"
+                android:background="@drawable/bg_edt_message_nine"
+                android:gravity="top|left"
+                android:hint="Message"
+                android:minLines="5"
+                android:paddingBottom="@dimen/dm_10dp"
+                android:paddingLeft="@dimen/dm_10dp"
+                android:paddingRight="@dimen/dm_30dp"
+                android:paddingTop="@dimen/dm_10dp"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/txtSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/dm_10dp"
+                android:background="@drawable/btn_red_corner_circle"
+                android:paddingBottom="@dimen/dm_10dp"
+                android:paddingLeft="@dimen/dm_20dp"
+                android:paddingRight="@dimen/dm_20dp"
+                android:paddingTop="@dimen/dm_10dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

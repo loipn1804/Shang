@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_profile_left_menu"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dm_10dp">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            style="@style/edt_edit_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:hint="Search"
+            android:imeOptions="actionDone" />
+
+        <ImageView
+            android:id="@+id/imvSearch"
+            android:layout_width="@dimen/dm_20dp"
+            android:layout_height="@dimen/dm_20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dm_10dp"
+            android:src="@drawable/ic_search_black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/twoWayView"
+            style="@style/TwoWayView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/lnlEmptyData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dm_50dp"
+                android:layout_height="@dimen/dm_50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_no_search_result" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No results is found."
+                android:textColor="@color/txt_black_77"
+                android:textSize="@dimen/txt_15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/bg_profile_left_menu" />
+    <size
+        android:width="@dimen/dm_2dp"
+        android:height="@dimen/dm_2dp" />
+
+</shape>

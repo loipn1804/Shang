@@ -1,0 +1,97 @@
+<resources>
+    <!--<string name="app_name">Shang</string>-->
+    <!--<string name="app_name">Shang(UAT)</string>-->
+    <string name="app_name">Shang(TEST)</string>
+
+    <string name="facebook_app_id">988404507880252</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="no_internet">No internet, please check your connection!</string>
+
+    <string name="blank_name">Please enter name</string>
+    <string name="blank_username">Please enter username</string>
+    <string name="blank_firstname">Please enter first name</string>
+    <string name="blank_lastname">Please enter last name</string>
+    <string name="blank_email">Please enter email address</string>
+    <string name="blank_message">Please enter message</string>
+    <string name="blank_pass">Please enter password</string>
+    <string name="blank_new_pass">Please enter new password</string>
+    <string name="confirm_pass_invalidate">Confirm password is invalidate</string>
+    <string name="blank_telephone">Please enter telephone number</string>
+    <string name="blank_street">Please enter street address</string>
+    <string name="blank_city">Please enter city</string>
+    <string name="blank_postcode">Please enter postcode</string>
+    <string name="choose_country">Please choose country</string>
+    <string name="choose_delivery_type">Please choose delivery type</string>
+    <string name="choose_payment_method">Please choose payment method</string>
+    <string name="no_address">Please add your address first</string>
+    <string name="no_cart">Your cart is empty, please add some products first</string>
+    <string name="blank_search">Please enter search key</string>
+    <string name="blank_search_3">Please enter search item name with minimum 3 characters</string>
+    <string name="no_search">No products match your keyword</string>
+    <string name="blank_coupon">Please enter discount code</string>
+    <string name="blank_evoucher">Please enter eVoucher</string>
+    <string name="invalidate_evoucher">Invalidate eVoucher</string>
+    <string name="invalidate_input">Invalidate input, please try again</string>
+    <string name="blank_birthday">Please choose birthday</string>
+    <string name="quantity_zero">Quantity should be bigger than 0</string>
+    <string name="quantity_exceed">Quantity exceed max value</string>
+    <string name="choose_evoucher">Please choose eVoucher</string>
+    <string name="redeem_item_success">Redeem item successfully</string>
+    <string name="convert_evoucher_success">Convert eVoucher successfully</string>
+
+    <string name="can_not_delete_default_address">Can not delete default address</string>
+
+    <string name="term_login">By signing in, I accept Terms &amp; Privacy Policy</string>
+    <string name="term_register">By signing up, I accept Terms &amp; Privacy Policy</string>
+    <string name="term">Terms &amp; Privacy Policy</string>
+
+    <string name="product_desc_sample">While Apple’s upcoming 9.7-inch iPad Pro will mostly match the 12.9-inch version in terms of functionality, there likely will be one key difference. Internal prototypes of the smaller model include a 12 megapixel rear camera comparable to the sensor in the iPhone 6s, according to sources. The 12.9-inch model that shipped this past November has an eight megapixel rear camera.</string>
+    <string name="product_name_sample">Mobiado Professional V3 AUro/Deha/Viro/Snora</string>
+
+    <string name="faq_q">1. Pellentesque non luctus quam. Proin bibendum ut urna ac pellentesque?</string>
+    <string name="faq_a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis lacinia dui. Praesent malesuada vel ipsum id semper. Fusce tempor ligula nec sem hendrerit dictum. Donec et urna dictum, sollicitudin ipsum sit amet, congue metus. Fusce arcu nibh, tincidunt varius tellus ut, egestas ornare ante. Curabitur massa felis, interdum eget turpis eu, efficitur dignissim est. Donec a convallis velit. Sed cursus nunc interdum felis bibendum tincidunt. Integer eget euismod mauris. Nam a enim ut libero fringilla semper. Aliquam placerat lectus eget mauris ullamcorper, hendrerit malesuada diam pharetra. Phasellus nec dui maximus, euismod enim volutpat, consectetur nibh. Sed imperdiet quis odio eget bibendum. Aenean posuere lectus non mauris pharetra placerat. Ut nec sodales quam. In et suscipit nulla, non pellentesque erat.</string>
+
+    <string name="address">82 Ubi Avenue 4, #06-04 Edward Boustead Centre Singapore 408832</string>
+    <string name="phone">+65 6443 1373</string>
+    <string name="email">ce@digimaticsolutions.com</string>
+
+    <string name="address_sample">33 Ubi Avenue 3 #04-38\nVertex Building\nSingapore 408868\n+65 9675 3810</string>
+    <string name="forgot_pass_label">Enter you email below to receive you password reset instructions</string>
+
+    <string name="add_wishlist">Product added to wishlist</string>
+    <string name="remove_wishlist">Product removed from wishlist</string>
+
+    <string name="webpage_not_available">The Internet connection appears to be down. Please try again later.</string>
+
+    <string name="some_thing_wrong">Something went wrong</string>
+
+    <string name="null_quantity">Quantity cannot be less than 0</string>
+    <string name="zero_quantity">Quantity should be bigger than 0</string>
+    <string name="long_quantity">You can only add up to a maximum of 99 qty to cart at one time</string>
+
+    <string name="analytic_in">[Get in]</string>
+    <string name="analytic_out">[Get out]</string>
+
+    <string name="analytic_sign_out">Sign out Action</string>
+    <string name="analytic_sign_in">Sign in Action</string>
+    <string name="analytic_action_sign_out">[Sign out]</string>
+    <string name="analytic_action_sign_in">[Sign in]</string>
+
+    <string name="analytic_shipping">Shopping Screen</string>
+    <string name="analytic_sign_in_screen">Sign in Screen</string>
+    <string name="analytic_sign_up">Sign up Screen</string>
+    <string name="analytic_forgot_pass">Forget Password Screen</string>
+    <string name="analytic_cart">Cart Screen</string>
+    <string name="analytic_account">My Account Screen</string>
+    <string name="analytic_setting">Settings Screen</string>
+    <string name="analytic_my_order">My Orders Screen</string>
+    <string name="analytic_about">About Us Screen</string>
+    <string name="analytic_term">Terms Screen</string>
+    <string name="analytic_privacy">Privacy Policy Screen</string>
+    <string name="analytic_delivery_type">Delivery Type Screen</string>
+    <string name="analytic_wishlist">Wishlist Screen</string>
+    <string name="analytic_alert">Alerts Screen</string>
+</resources>

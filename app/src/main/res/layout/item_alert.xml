@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_80dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dm_5dp"
+        android:paddingRight="@dimen/dm_5dp">
+
+        <ImageView
+            android:layout_width="@dimen/dm_80dp"
+            android:layout_height="@dimen/dm_80dp"
+            android:padding="@dimen/dm_5dp"
+            android:src="@drawable/icon_v1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="ShangCommerce"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/txt_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_2dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                android:textColor="@color/txt_black_33"
+                android:textSize="@dimen/txt_12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dm_10dp"
+                    android:layout_height="@dimen/dm_10dp"
+                    android:src="@drawable/ic_clock" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm_5dp"
+                    android:text="09:15"
+                    android:textColor="@color/txt_black_77"
+                    android:textSize="@dimen/txt_10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/dm_10dp"
+            android:layout_height="@dimen/dm_10dp"
+            android:layout_marginRight="@dimen/dm_5dp"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:background="@drawable/circle_red" />
+    </LinearLayout>
+</LinearLayout>

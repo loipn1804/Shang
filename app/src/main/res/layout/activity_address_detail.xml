@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/main_color">
+
+        <RelativeLayout
+            android:id="@+id/rltBack"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_red">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Address Detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title" />
+
+        <TextView
+            android:id="@+id/txtSave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_red"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dm_10dp"
+            android:paddingRight="@dimen/dm_10dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtFirstName"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="First Name *" />
+
+            <EditText
+                android:id="@+id/edtMiddleName"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Middle Name" />
+
+            <EditText
+                android:id="@+id/edtLastName"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Last Name *" />
+
+            <EditText
+                android:id="@+id/edtCompany"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Company" />
+
+            <EditText
+                android:id="@+id/edtTelephone"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Telephone *" />
+
+            <EditText
+                android:id="@+id/edtFax"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Fax" />
+
+            <EditText
+                android:id="@+id/edtStreet"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Street Address *" />
+
+            <EditText
+                android:id="@+id/edtStreet_2"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Street Address 2" />
+
+            <EditText
+                android:id="@+id/edtCity"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:text="Singapore"
+                android:hint="City *" />
+
+            <RelativeLayout
+                android:id="@+id/rltCountry"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:layout_marginTop="@dimen/dm_10dp">
+
+                <TextView
+                    android:id="@+id/txtCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_edt_cart"
+                    android:gravity="center_vertical"
+                    android:hint="Country *"
+                    android:paddingLeft="@dimen/dm_10dp"
+                    android:paddingRight="@dimen/dm_10dp"
+                    android:textColor="@color/txt_black_55"
+                    android:textSize="@dimen/txt_15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/ac_imv_size"
+                    android:layout_height="@dimen/ac_imv_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:padding="@dimen/dm_2dp"
+                    android:src="@drawable/ic_arrow_bottom" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edtRegion"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="State/Province" />
+
+            <EditText
+                android:id="@+id/edtPostcode"
+                style="@style/edt_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginBottom="@dimen/dm_10dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Zip/Postal Code *" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

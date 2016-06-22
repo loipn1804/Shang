@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rltBack"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_white">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_back_black" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/rltClearSearch"
+            android:layout_toRightOf="@+id/rltBack"
+            android:background="@null"
+            android:hint="Search"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/txt_black_55"
+            android:textColorHint="@color/txt_black_55_hint"
+            android:textSize="@dimen/txt_title" />
+
+        <RelativeLayout
+            android:id="@+id/rltClearSearch"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/rltCart"
+            android:background="@drawable/btn_white">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dm_2dp"
+                android:src="@drawable/ic_clear_search" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/lnlEmptyData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dm_50dp"
+                android:layout_height="@dimen/dm_50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_no_search_result" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No results is found."
+                android:textColor="@color/txt_black_77"
+                android:textSize="@dimen/txt_15sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/divider"
+            android:dividerHeight="1px"
+            android:scrollbars="none">
+
+        </ListView>
+    </RelativeLayout>
+</LinearLayout>

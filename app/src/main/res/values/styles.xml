@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@color/main_color</item>
+        <item name="android:colorPrimaryDark">@color/main_color</item>
+    </style>
+
+    <style name="edt_login" parent="AppTheme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txt_18sp</item>
+        <item name="android:layout_marginLeft">@dimen/dm_50dp</item>
+        <item name="android:layout_marginRight">@dimen/dm_50dp</item>
+        <item name="android:textColorHint">@color/white_hint</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="StyledIndicators" parent="@style/AppTheme">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">#00ff00</item>
+        <item name="strokeColor">#0000ff</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="radius">10dp</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="TwoWayViewBase">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="TwoWayView" parent="TwoWayViewBase">
+        <item name="android:orientation">vertical</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="edt_edit_account" parent="AppTheme">
+        <item name="android:textColor">@color/txt_black_55</item>
+        <item name="android:textSize">@dimen/txt_15sp</item>
+        <item name="android:textColorHint">@color/txt_black_55_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/bg_edt_cart</item>
+        <item name="android:paddingLeft">@dimen/dm_10dp</item>
+        <item name="android:paddingRight">@dimen/dm_10dp</item>
+        <item name="android:layout_marginLeft">@dimen/dm_20dp</item>
+        <item name="android:layout_marginRight">@dimen/dm_20dp</item>
+    </style>
+
+    <style name="edt_discount_code" parent="AppTheme">
+        <item name="android:textColor">@color/txt_black_55</item>
+        <item name="android:textSize">@dimen/txt_15sp</item>
+        <item name="android:textColorHint">@color/txt_black_55_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/bg_edt_cart</item>
+        <item name="android:paddingLeft">@dimen/dm_10dp</item>
+        <item name="android:paddingRight">@dimen/dm_10dp</item>
+    </style>
+
+    <style name="txt_setting_label" parent="AppTheme">
+        <item name="android:textColor">@color/txt_black_55</item>
+        <item name="android:textSize">@dimen/txt_15sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/dm_15dp</item>
+        <item name="android:paddingRight">@dimen/dm_15dp</item>
+        <item name="android:paddingTop">@dimen/dm_15dp</item>
+        <item name="android:paddingBottom">@dimen/dm_10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="txt_setting" parent="AppTheme">
+        <item name="android:textColor">@color/txt_black_55</item>
+        <item name="android:textSize">@dimen/txt_15sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/dm_15dp</item>
+        <item name="android:paddingRight">@dimen/dm_15dp</item>
+        <item name="android:paddingTop">@dimen/dm_15dp</item>
+        <item name="android:paddingBottom">@dimen/dm_15dp</item>
+    </style>
+</resources>

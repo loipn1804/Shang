@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnlManageAddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@drawable/btn_white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/ac_imv_size"
+            android:layout_height="@dimen/ac_imv_size"
+            android:src="@drawable/ic_setting_address" />
+
+        <TextView
+            android:id="@+id/txtManageAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="MANAGE ADDRESSES"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/txt_15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

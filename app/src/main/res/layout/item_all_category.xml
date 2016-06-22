@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/black_trans_50" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Mobile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_18sp" />
+
+            <View
+                android:id="@+id/viewDivide"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dm_1dp"
+                android:layout_alignLeft="@+id/txtNumber"
+                android:layout_alignRight="@+id/txtNumber"
+                android:layout_below="@id/txtTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_2dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/txtNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewDivide"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_2dp"
+                android:text="123 items"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

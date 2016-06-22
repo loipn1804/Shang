@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_profile_left_menu"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/main_color">
+
+        <RelativeLayout
+            android:id="@+id/rltBack"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_red">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNotificationLabel"
+                style="@style/txt_setting_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTIFICATION" />
+
+            <RelativeLayout
+                android:id="@+id/rltNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_white">
+
+                <TextView
+                    style="@style/txt_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Push Notification" />
+
+                <ToggleButton
+                    android:id="@+id/toggleNotification"
+                    android:layout_width="@dimen/dm_40dp"
+                    android:layout_height="@dimen/dm_20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:background="@drawable/sw_notification"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtAccountLabel"
+                style="@style/txt_setting_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACCOUNT" />
+
+            <RelativeLayout
+                android:id="@+id/rltEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_white">
+
+                <TextView
+                    style="@style/txt_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm_20dp"
+                    android:layout_height="@dimen/dm_20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:padding="@dimen/dm_3dp"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@drawable/btn_white">
+
+                <TextView
+                    style="@style/txt_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm_20dp"
+                    android:layout_height="@dimen/dm_20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:padding="@dimen/dm_3dp"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtAboutLabel"
+                style="@style/txt_setting_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT" />
+
+            <RelativeLayout
+                android:id="@+id/rltAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_white">
+
+                <TextView
+                    style="@style/txt_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About this App" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm_20dp"
+                    android:layout_height="@dimen/dm_20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:padding="@dimen/dm_3dp"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@drawable/btn_white">
+
+                <TextView
+                    style="@style/txt_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/term" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm_20dp"
+                    android:layout_height="@dimen/dm_20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:padding="@dimen/dm_3dp"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltBuildNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@drawable/btn_white">
+
+                <TextView
+                    android:id="@+id/txtBuildNo"
+                    style="@style/txt_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Build No.:" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltCardCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@drawable/btn_white">
+
+                <TextView
+                    android:id="@+id/txtCardCode"
+                    style="@style/txt_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Card Code:" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtSignout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_margin="@dimen/dm_20dp"
+                android:background="@drawable/btn_sign_out"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Sign Out"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/txt_15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

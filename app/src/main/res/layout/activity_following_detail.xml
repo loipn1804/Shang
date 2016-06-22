@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/main_color">
+
+        <RelativeLayout
+            android:id="@+id/rltBack"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_red">
+
+            <ImageView
+                android:id="@+id/imvMenu"
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Shopping"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title" />
+
+        <RelativeLayout
+            android:id="@+id/rltCart"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_red">
+
+            <ImageView
+                android:id="@+id/imvCart"
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_cart" />
+
+            <TextView
+                android:id="@+id/txtCart"
+                android:layout_width="@dimen/dm_cart"
+                android:layout_height="@dimen/dm_cart"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:background="@drawable/circle_red"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_7sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltSearch"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/rltCart"
+            android:background="@drawable/btn_red">
+
+            <ImageView
+                android:id="@+id/imvSearch"
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_search" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_150dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            style="@style/StyledIndicators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/dm_2dp"
+            android:paddingTop="@dimen/dm_2dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>
