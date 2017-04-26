@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -35,7 +36,7 @@
                         android:layout_width="@dimen/ac_imv_size"
                         android:layout_height="@dimen/ac_imv_size"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/ic_back" />
+                        android:src="@drawable/ic_back"/>
                 </RelativeLayout>
 
                 <TextView
@@ -45,7 +46,7 @@
                     android:layout_centerInParent="true"
                     android:text="My Profile"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/txt_title" />
+                    android:textSize="@dimen/txt_title"/>
 
                 <TextView
                     android:id="@+id/txtSave"
@@ -58,13 +59,13 @@
                     android:paddingRight="@dimen/dm_10dp"
                     android:text="Save"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/txt_12sp" />
+                    android:textSize="@dimen/txt_12sp"/>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dm_1dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/divider" />
+                    android:background="@color/divider"/>
             </RelativeLayout>
 
 
@@ -82,7 +83,7 @@
                     android:layout_marginLeft="@dimen/dm_20dp"
                     android:layout_marginRight="@dimen/dm_10dp"
                     android:layout_marginTop="@dimen/dm_20dp"
-                    android:src="@drawable/avatar_default" />
+                    android:src="@drawable/avatar_default"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -100,7 +101,7 @@
                         android:text="USERNAME"
                         android:textColor="@color/txt_black"
                         android:textSize="@dimen/txt_15sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/txtEmail"
@@ -111,7 +112,7 @@
                         android:singleLine="true"
                         android:text="name@mail.com"
                         android:textColor="@color/txt_black_55"
-                        android:textSize="@dimen/txt_12sp" />
+                        android:textSize="@dimen/txt_12sp"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -135,7 +136,7 @@
                             android:text="EDIT AVATAR"
                             android:textColor="@color/main_color"
                             android:textSize="@dimen/txt_10sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"/>
 
                         <TextView
                             android:id="@+id/txtChangePassword"
@@ -153,7 +154,7 @@
                             android:text="CHANGE PASSWORD"
                             android:textColor="@color/main_color"
                             android:textSize="@dimen/txt_10sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -164,7 +165,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dm_40dp"
                 android:hint="First Name"
-                android:imeOptions="actionNext" />
+                android:imeOptions="actionNext"/>
 
             <EditText
                 android:id="@+id/edtLastName"
@@ -173,7 +174,7 @@
                 android:layout_height="@dimen/dm_40dp"
                 android:layout_marginTop="@dimen/dm_10dp"
                 android:hint="Last Name"
-                android:imeOptions="actionDone" />
+                android:imeOptions="actionDone"/>
 
             <RelativeLayout
                 android:id="@+id/rltBirthday"
@@ -191,7 +192,7 @@
                     android:layout_marginLeft="0dp"
                     android:layout_marginRight="0dp"
                     android:enabled="false"
-                    android:hint="Date of Birth" />
+                    android:hint="Date of Birth"/>
 
                 <ImageView
                     android:id="@+id/imvBirthday"
@@ -199,7 +200,7 @@
                     android:layout_height="@dimen/dm_40dp"
                     android:layout_alignParentRight="true"
                     android:padding="@dimen/dm_10dp"
-                    android:src="@drawable/ic_calendar" />
+                    android:src="@drawable/ic_calendar"/>
             </RelativeLayout>
 
             <EditText
@@ -208,7 +209,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dm_40dp"
                 android:layout_marginTop="@dimen/dm_10dp"
-                android:hint="Phone Number" />
+                android:hint="Phone Number"/>
 
             <EditText
                 android:id="@+id/edtDefaultAddress"
@@ -218,7 +219,7 @@
                 android:layout_marginTop="@dimen/dm_10dp"
                 android:ellipsize="end"
                 android:hint="Default Shipping Address"
-                android:singleLine="true" />
+                android:singleLine="true"/>
 
             <LinearLayout
                 android:id="@+id/lnlSettingAddress"
@@ -234,7 +235,7 @@
                 <ImageView
                     android:layout_width="@dimen/ac_imv_size"
                     android:layout_height="@dimen/ac_imv_size"
-                    android:src="@drawable/ic_setting_address" />
+                    android:src="@drawable/ic_setting_address"/>
 
                 <TextView
                     android:id="@+id/txtSettingAddress"
@@ -246,8 +247,14 @@
                     android:text="MANAGE ADDRESSES"
                     android:textColor="@color/main_color"
                     android:textSize="@dimen/txt_15sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imvTest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_200dp"
+                android:adjustViewBounds="true"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

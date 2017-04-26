@@ -1,12 +1,9 @@
 package digimatic.shangcommerce.view;
 
-import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-
-import digimatic.shangcommerce.R;
 
 /**
  * Created by USER on 3/11/2016.

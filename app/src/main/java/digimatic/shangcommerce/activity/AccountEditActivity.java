@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.DatePicker;
@@ -44,6 +45,9 @@ import digimatic.shangcommerce.connection.threadconnection.execute.CustomerExecu
 import digimatic.shangcommerce.daocontroller.CustomerController;
 import digimatic.shangcommerce.staticfunction.Font;
 import digimatic.shangcommerce.staticfunction.StaticFunction;
+import digimatic.shangcommerce.testmode.Util.FileUtil;
+import digimatic.shangcommerce.testmode.Util.ImageUtil;
+import digimatic.shangcommerce.testmode.activity.*;
 import greendao.Customer;
 
 /**
@@ -81,6 +85,8 @@ public class AccountEditActivity extends BaseActivity implements View.OnClickLis
 
     private RelativeLayout rltBirthday;
     private ImageView imvBirthday;
+
+    private ImageView imvTest;
 
     protected ImageLoader imageLoader = ImageLoader.getInstance();
     private DisplayImageOptions options;
@@ -141,6 +147,8 @@ public class AccountEditActivity extends BaseActivity implements View.OnClickLis
 
         edtPhoneNumber.setVisibility(View.GONE);
         edtDefaultAddress.setVisibility(View.GONE);
+
+        imvTest = (ImageView) findViewById(R.id.imvTest);
     }
 
     private void initData() {
@@ -423,8 +431,21 @@ public class AccountEditActivity extends BaseActivity implements View.OnClickLis
         dialog.setContentView(R.layout.popup_pick_image);
 
         LinearLayout root = (LinearLayout) dialog.findViewById(R.id.root);
+        LinearLayout lnlCamera2 = (LinearLayout) dialog.findViewById(R.id.lnlCamera2);
         LinearLayout lnlCamera = (LinearLayout) dialog.findViewById(R.id.lnlCamera);
         LinearLayout lnlGallery = (LinearLayout) dialog.findViewById(R.id.lnlGallery);
+
+        lnlCamera.setVisibility(View.GONE);
+
+        lnlCamera2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCameraToTakePicture();
+//                Intent intent = new Intent(AccountEditActivity.this, digimatic.shangcommerce.testmode.activity.MainActivity.class);
+//                startActivity(intent);
+                dialog.dismiss();
+            }
+        });
 
         lnlCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -457,6 +478,14 @@ public class AccountEditActivity extends BaseActivity implements View.OnClickLis
         Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, createUriForCamera());
         startActivityForResult(cameraIntent, CAMERA_REQUEST);
+    }
+
+    public final int CAMERA_REQUEST_PICTURE = 112;
+
+    private void openCameraToTakePicture() {
+        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, ImageUtil.createTempFile(this));
+        startActivityForResult(cameraIntent, CAMERA_REQUEST_PICTURE);
     }
 
     private void pickImage() {
@@ -520,6 +549,15 @@ public class AccountEditActivity extends BaseActivity implements View.OnClickLis
             }
         } else if (requestCode == Crop.REQUEST_CROP) {
             handleCrop(resultCode, data);
+        } else if (requestCode == CAMERA_REQUEST_PICTURE && resultCode == RESULT_OK) {
+            try {
+                Uri uri = ImageUtil.getTempFile(this);
+                beginCrop(uri);
+
+                sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, uri));
+            } catch (Exception e) {
+                Toast.makeText(this, "Fail " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
